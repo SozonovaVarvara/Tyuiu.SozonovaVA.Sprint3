@@ -8,13 +8,11 @@ namespace Tyuiu.SozonovaVA.Sprint3.Task0.V6.Test
         public void TestMethod1()
         {
             DataService ds = new DataService();
-            double value = 5;
             int startValue = 1;
             int stopValue = 15;
-
             double res = ds.GetMultiplySeries(startValue, stopValue);
             double wait = 0.001;
-            Assert.AreEqual(wait, res);
+            Assert.AreEqual(res, wait);
         }
     }
 }

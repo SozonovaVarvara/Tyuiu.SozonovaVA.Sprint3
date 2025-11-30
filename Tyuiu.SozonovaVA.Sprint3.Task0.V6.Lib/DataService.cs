@@ -5,13 +5,14 @@ namespace Tyuiu.SozonovaVA.Sprint3.Task0.V6.Lib
     {
         public double GetMultiplySeries(int startValue, int stopValue)
         {
-            double p = 0;
+            double res = 1;
             int i;
             for (i = startValue; i <= stopValue; i++)
             {
-                p = p + (1 / Math.Pow((Math.Cos(5) + 1), 2));
+                res *= 1 / Math.Pow((Math.Cos(5) + 1), 2);
             }
-            return Math.Round(p, 3);
+
+            return Math.Round(res, 3);
         }
     }
 }
