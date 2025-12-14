@@ -5,7 +5,13 @@ namespace Tyuiu.SozonovaVA.Sprint3.Task2.V29.Lib
     {
         public double GetSumSeries(double value, int startValue, int stopValue)
         {
-            throw new NotImplementedException();
+            double SumSeries = 0;
+            do
+            {
+                SumSeries += (Math.Pow(value, startValue) + 0.25) * Math.Cos(startValue);
+                startValue++;
+            } while (startValue <= stopValue);
+            return Math.Round(SumSeries, 3);
         }
     }
 }
