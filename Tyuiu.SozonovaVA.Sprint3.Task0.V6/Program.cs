@@ -31,7 +31,6 @@ class Program
         Console.WriteLine("*************************************************************************************************");
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                                                    *");
         Console.WriteLine("*************************************************************************************************");
-
         Console.WriteLine("Сумма ряда = " + ds.GetMultiplySeries(startValue, stopValue));
         Console.ReadKey();
     }
