@@ -5,7 +5,17 @@ namespace Tyuiu.SozonovaVA.Sprint3.Task3.V8.Lib
     {
         public int ConvertStringToInt(string value)
         {
-            throw new NotImplementedException();
+            string res = "";
+            foreach (char c in value)
+            {
+                if (Char.IsDigit(c))
+                {
+                    res += c;
+                }
+            }
+            int number = Int32.Parse(res);
+            return number;
+
         }
     }
 }
