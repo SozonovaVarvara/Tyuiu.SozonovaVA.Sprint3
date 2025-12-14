@@ -1,9 +1,9 @@
 ﻿using tyuiu.cources.programming.interfaces.Sprint3;
 namespace Tyuiu.SozonovaVA.Sprint3.Task5.V16.Lib
 {
-    public class DataService : ISprint3Task4V16
+    public class DataService : ISprint3Task5V16
     {
-        public double Calculate(int x, int startValue1, int startValue2, int stopValue1, int stopValue2)
+        public double GetSumSumSeries(int x, int startValue1, int startValue2, int stopValue1, int stopValue2)
         {
             double sumSeries = 0;
             for (int i = startValue1; i <= stopValue1; i++)
@@ -14,11 +14,6 @@ namespace Tyuiu.SozonovaVA.Sprint3.Task5.V16.Lib
                 }
             }
             return Math.Round(sumSeries, 3);
-        }
-
-        public double GetSumSumSeries(int v1, int v2, int v3, int v4, int v5)
-        {
-            throw new NotImplementedException();
         }
     }
 }
